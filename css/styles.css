@@ -145,9 +145,10 @@ body {
 }
 
 .card {
-  width: 22rem;
+  width: auto;
   text-align: center;
   font-family: 'Montserrat';
+  margin-bottom: 50px;
 }
 
 .card-text {
