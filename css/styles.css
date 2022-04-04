@@ -2,13 +2,12 @@ body {
  font-family: 'Montserrat';
 }
 
-
-
 /* Navigation */
 #top-section {
   color: #FFF;
   background-color: #FD3A69;
   padding: 0 15% 3% 15%;
+  position: relative;
 }
 
 .navbar {
@@ -33,7 +32,10 @@ body {
 }
 
 .dog-img {
-  height: 40rem;
+  height: 38rem;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 60%;
 }
 
 .heading-desc {
@@ -42,6 +44,11 @@ body {
   font-size: 4rem;
   margin-bottom: 50px;
   line-height: 1.5;
+  text-align: left;
+
+}
+
+.feature-container {
   text-align: center;
 }
 
@@ -60,6 +67,9 @@ body {
   text-align: center;
   font-family: 'Montserrat';
   margin-right: 0;
+  position: relative;
+  background-color: #FFF;
+  z-index: 1;
 }
 
 .feature-title {
@@ -183,22 +193,58 @@ body {
 #cta {
   text-align: center;
   background-color: #FD3A69;
-  padding: 3% 15%;
+  padding: 7% 20%;
 }
 
 .downloads-title {
   color: #FFF;
   font-weight: bold;
   font-family: 'Montserrat';
-  font-size: 2rem;
-  margin-bottom: 50px;
+  font-size: 3.5rem;
+  margin-bottom: 80px;
+  line-height: 1.5;
 }
 
 /* Footer */
 
 #footer {
   text-align: center;
-  color: #FFF;
-  background-color: #FD3A69;
-  padding: 1% 15%;
+  background-color: #FFF;
+  color: #8F8F8F;
+  padding: 3% 15%;
+  line-height: 2;
+}
+
+.footer-social ul {
+  display: inline-flex;
+  padding: 0;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.footer-social a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+.footer-social li:hover a {
+  color: #FD3A69;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1028px) {
+  .dog-img {
+    transform: rotate(0deg);
+    position: static;
+  }
+
+  .heading-desc {
+    text-align: center;
+  }
+
 }
